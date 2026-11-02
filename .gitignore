@@ -1,0 +1,55 @@
+# User data — NEVER commit
+data/
+data.*
+**/data/
+**/data.*
+app-state.json
+app-state*.json
+**/app-state*.json
+**/chromium/
+**/Cookies
+**/Login Data
+**/Local State
+**/Preferences
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Build / dependencies
+node_modules/
+dist/
+out/
+release/
+*.zip
+*.7z
+*.exe
+*.dll
+*.asar
+*.pak
+*.bin
+*.dat
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Test artifacts / screenshots with possible account data
+test/platform-smoke/smoke.log
+screens/
+screenshots/
+test-data/
+scale-data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.tmp
+*.bak

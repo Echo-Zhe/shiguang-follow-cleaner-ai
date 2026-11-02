@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="color-scheme" content="light">
+  <title>拾光 · 关注清理</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="主导航">
+      <div class="brand"><div class="brand-mark"></div><div class="brand-text"><div class="brand-title">拾光<span>·</span>关注清理</div><div class="brand-sub">FOLLOW CLEANER</div></div></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar" id="topbar"></header>
+      <main class="content" id="content">
+        <div class="page">
+          <div class="loading-page">
+            <span class="spinner lg"></span>
+            <div class="loading-title">正在加载本地数据</div>
+            <div class="loading-sub">你的数据只保存在这台电脑上</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div id="overlayRoot"></div>
+  <div id="toastRoot" class="toast-stack" aria-live="polite"></div>
+
+  <script src="../shared/rules.js"></script>
+  <script src="demo.js"></script>
+  <script src="app.js"></script>
+  <script src="app-modals.js"></script>
+  <script src="app-actions.js"></script>
+  <script src="app-impl.js"></script>
+</body>
+</html>

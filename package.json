@@ -1,0 +1,28 @@
+{
+  "name": "shiguang-follow-cleaner",
+  "productName": "拾光 · 关注清理",
+  "version": "1.5.0",
+  "description": "Windows desktop tool for scanning, filtering and manually cleaning Douyin / Bilibili following lists.",
+  "private": false,
+  "main": "main.js",
+  "author": "AI-assisted open-source contributors",
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "douyin",
+    "bilibili",
+    "follow-manager",
+    "privacy",
+    "ai-generated"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "test": "node test/rules.test.js && node test/store.test.js && node test/douyin-pagination.test.js"
+  },
+  "devDependencies": {
+    "electron": "^44.7.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
